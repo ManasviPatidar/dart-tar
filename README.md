@@ -10,13 +10,7 @@ A simple usage example:
 ```dart
 import 'package:dart_tar/dart_tar.dart';
 
-main() {
-  var awesome = new Awesome();
+void main() {
+  final td = TarDecoder(inputPath: 'posix.tar')..decode();
 }
 ```
-
-## Features and bugs
-
-Please file feature requests and bugs at the [issue tracker][tracker].
-
-[tracker]: http://example.com/issues/replaceme
