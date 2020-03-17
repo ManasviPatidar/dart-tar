@@ -21,8 +21,7 @@ class TarDecoder {
           String.fromCharCodes(
               inputFileBytes.sublist(offset + 124, offset + 135)),
           radix: 8);
-      print(tf.fileName);
-      print(tf.fileSize);
+      print('File named ${tf.fileName} of size ${tf.fileSize} Bytes is present.');
       offset += ((tf.fileSize ~/ 512) + 2) * 512;
     }
 

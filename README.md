@@ -14,3 +14,6 @@ void main() {
   final td = TarDecoder(inputPath: 'posix.tar')..decode();
 }
 ```
+## Demo
+
+![Demo of the sample](demo/demo2.png)
